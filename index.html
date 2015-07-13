@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>2048</title>
+        <link rel="stylesheet" href="styles/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    </head>
+    <body ng-controller="GameCtrl" ng-keydown="handlePress($event)">
+        <h1>2048</h1>
+        <div class="canvas">
+            <div class="row" ng-repeat="row in gameState track by $index">
+                <div class="cell" ng-repeat="cell in row track by $index" tile value="cell"></div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+        <script src="scripts/main.js"></script>
+        <script src="scripts/lib/main.js"></script>
+    </body>
+</html>

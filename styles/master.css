@@ -1,0 +1,63 @@
+h1 {
+    font-size: 64pt;
+    text-align: center;
+}
+
+.canvas {
+    margin: auto;
+    width: 800px;
+    height: 800px;
+}
+
+.canvas .row {
+    width: 100%;
+    height: calc(25% - 5px);
+}
+
+.canvas .row .cell {
+    display: inline-block;
+    width: calc(25% - 5px);
+    height: calc(100% - 5px);
+    background: rgba(238, 228, 218, 0.35);
+    margin-right: 5px;
+    font-size: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: helvetica;
+}
+
+.tile {
+    color: rgb(119, 110, 101);
+    width: 100%;
+    height: calc(100% - 40px);
+    padding-top: 40px;
+    font-weight: bold;
+}
+
+.color-two {
+    background: #eee4da;
+}
+
+.color-four {
+    background: #ede0c8;
+}
+
+.color-eight {
+    background: #f2b179;
+    color: #f9f6f2;
+}
+
+.color-sixteen {
+    background: #f59563;
+    color: #f9f6f2;
+}
+
+.color-thirtytwo {
+    background: #f67c5f;
+    color: #f9f6f2;
+}
+
+.color-sixtyfour {
+    background: #f65e3b;
+    color: #f9f6f2;
+}
