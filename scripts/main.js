@@ -16,6 +16,12 @@ function startGame() {
         else if (direction == "down") {
             moveDown(state);
         }
+        else if (direction == "up") {
+            moveUp(state);
+        }
+        else if (direction == "left") {
+            moveLeft(state);
+        }
         render(state);
     });
     setupStartupState(state);
@@ -50,21 +56,6 @@ function moveRight(state) {
         }
     }
 }
-/*function moveDown(state){
-    var freeCell=[];
-    for(var j = 3; j>=0; j--) {
-        for (var i = 0; i<=3; i++) {
-            if (state[j][i] == 0 && !freeCell[i]) {
-                freeCell[i] = j;
-            } 
-
-            if (state[j][i] && freeCell[i]) {
-                state[j][freeCell[i]] = state[j][i];
-                state[j][i] = 0;
-            }
-        }
-    }
-}*/
 
 function moveDown(state) {
     var freeCell = [];
@@ -79,4 +70,14 @@ function moveDown(state) {
             }
         }
     }
+}
+
+function moveUp(state) {
+    var freeCell = [];
+
+}
+
+function moveLeft(state) {
+    var freeCell = [];
+
 }
